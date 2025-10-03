@@ -1,0 +1,79 @@
+/* File: assets/css/style.css */
+/* Kumpulan style kustom untuk membuat tampilan lebih menarik */
+
+:root {
+  /* Mengganti warna utama Bootstrap menjadi biru langit yang sesuai dengan brand POLNEP */
+  --bs-primary: #0d6efd;
+  --bs-primary-rgb: 13, 110, 253;
+  
+  /* Anda bisa menyesuaikan warna lain jika perlu */
+  --bs-secondary: #6c757d;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-body-bg: #f8f9fa; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bs-body-bg);
+}
+
+/* Mengatur agar konten utama (main) mengisi ruang yang tersedia, mendorong footer ke bawah */
+.main-content {
+    flex-grow: 1;
+}
+
+/* Style untuk Carousel di Beranda */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Style untuk Feature Cards di Beranda dan Informasi */
+.feature-card {
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+    border: 0;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-polnep-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Style untuk Halaman Login */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-container .card {
+    width: 100%;
+    max-width: 450px;
+}
+
