@@ -19,6 +19,9 @@
                     <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'jurusan') ? 'active' : ''; ?>" href="index.php?page=jurusan">Jurusan</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kurikulum') ? 'active' : ''; ?>" href="index.php?page=kurikulum">Kurikulum</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'mahasiswa') ? 'active' : ''; ?>" href="index.php?page=mahasiswa">Mahasiswa</a>
                 </li>
                 <li class="nav-item">

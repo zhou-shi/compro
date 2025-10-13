@@ -27,7 +27,7 @@
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
     </html>

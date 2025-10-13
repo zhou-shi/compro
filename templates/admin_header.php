@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <title>Admin Dashboard | POLNEP</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="admin.php?page=dashboard">
         <i class="fas fa-tachometer-alt me-2"></i> Admin Panel
@@ -34,10 +34,13 @@
             <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'dashboard') ? 'active' : ''; ?>" href="admin.php?page=dashboard">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kurikulum') ? 'active' : ''; ?>" href="admin.php?page=kurikulum">Kurikulum</a>
+            <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'jurusan') ? 'active' : ''; ?>" href="admin.php?page=jurusan">Jurusan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'mahasiswa') ? 'active' : ''; ?>" href="admin.php?page=mahasiswa">Mahasiswa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kurikulum') ? 'active' : ''; ?>" href="admin.php?page=kurikulum">Kurikulum</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-danger" href="auth/logout.php">
